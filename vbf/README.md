@@ -1,7 +1,7 @@
 API to create and get content
 
 ## Create / Update Content
-<key>: API key from com_api. See the plg_api_users
+key: API key from com_api. See the plg_api_users
 ```http
 POST /index.php?option=com_api&app=vbf&resource=vbf&format=raw&key=<key>
 ```

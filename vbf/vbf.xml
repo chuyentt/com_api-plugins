@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.0" type="plugin" group="api" method="upgrade">
+    <name>Api - VBF</name>
+    <version>1.0</version>
+    <creationDate>July 30, 2019</creationDate>
+    <author>Tran Trung Chuyen</author>
+    <authorEmail>chuyentt@gmail.com</authorEmail>
+    <authorUrl>https://geomatics.vn</authorUrl>
+    <copyright>Tran Trung Chuyen. All rights reserved.</copyright> 
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <description>This plugin use for get VBF data from joomla site.</description>
+    
+    <files>
+        <filename plugin="vbf">vbf.php</filename>
+        <folder>vbf</folder>
+        <filename >vbf/faq.php</filename>
+        <filename >vbf/notification.php</filename>
+        <filename >vbf/vbf.php</filename>
+    </files>
+    
+</extension>

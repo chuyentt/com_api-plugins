@@ -1,13 +1,13 @@
 API to create and get content
 
 ## Create / Update Content
-
+<key>: API key from com_api. See the plg_api_users
 ```http
-POST /index.php?option=com_api&app=vbf&resource=vbf&format=raw
+POST /index.php?option=com_api&app=vbf&resource=vbf&format=raw&key=<key>
 ```
 OR update an existing faq
 ```http
-POST /index.php?option=com_api&app=vbf&resource=vbf&format=raw&id=:id
+POST /index.php?option=com_api&app=vbf&resource=vbf&format=raw&key=<key>&id=:id
 ```
 
 #### Request Params

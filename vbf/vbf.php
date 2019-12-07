@@ -29,9 +29,11 @@ class plgAPIVbf extends ApiPlugin
 		//$lang->load('plg_api_vbf', JPATH_ADMINISTRATOR, '', true);
 		
 		// Set the vbf resource to be public (nếu muốn cho lấy thông tin mà không cần key)
-		
+
+		$this->setResourceAccess('vbf', 'public', 'get');
 		$this->setResourceAccess('faq', 'public', 'get');
 		$this->setResourceAccess('notification', 'public', 'get');
-		$this->setResourceAccess('vbf', 'public', 'get');
+		$this->setResourceAccess('mother', 'public', 'get');
+		$this->setResourceAccess('log', 'public', 'get');
 	}
 }

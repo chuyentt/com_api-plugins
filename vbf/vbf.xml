@@ -13,9 +13,11 @@
     <files>
         <filename plugin="vbf">vbf.php</filename>
         <folder>vbf</folder>
-        <filename >vbf/faq.php</filename>
-        <filename >vbf/notification.php</filename>
-        <filename >vbf/vbf.php</filename>
+        <filename>vbf/faq.php</filename>
+        <filename>vbf/notification.php</filename>
+        <filename>vbf/vbf.php</filename>
+        <filename>vbf/mother.php</filename>
+        <filename>vbf/log.php</filename>
     </files>
     
 </extension>

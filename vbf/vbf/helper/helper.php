@@ -11,6 +11,7 @@ defined('_JEXEC') or die('Restricted access');
 require_once JPATH_SITE.'/plugins/api/vbf/vbf/vbf.php';
 require_once JPATH_SITE.'/plugins/api/vbf/vbf/faq.php';
 require_once JPATH_SITE.'/plugins/api/vbf/vbf/notification.php';
+require_once JPATH_SITE.'/plugins/api/vbf/vbf/mother.php';
 
 class VbfHelper 
 {

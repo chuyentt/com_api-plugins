@@ -1,7 +1,37 @@
 API to create and get content
 
+## Create / Update Mother
+key: API key from com_api. See the plg_api_vbf
+```http
+POST /index.php?option=com_api&app=vbf&resource=mother&format=raw&key=<key>
+```
+OR update an existing faq
+```http
+POST /index.php?option=com_api&app=vbf&resource=mother&format=raw&key=<key>&id=:id
+```
+
+#### Request Params
+| Param Name | Required | Type | Comment  |
+| ---------- | -------- | ------- | :---- |
+| state    | NO      | INT | 1 = Published (Default) / 0 = Unpublished / -1 = Archived |
+| code    | NO      | STRING |        |
+| babybirth     | NO      | STRING |        |
+| lmp      | NO      | STRING |         |
+| phone      | NO      | STRING |         |
+| type      | NO      | STRING |         |
+| token      | NO      | STRING |         |
+
+#### Response Params
+
+| Param Name | Comment |
+| ---------- | :------ |
+| success | true if the faq was created, false if there was a problem |
+| message | Error mesage in case success is false |
+| data.results | Array containing a single [Faq Object](#faq-object) in case of success. Empty array in case of failure. |
+
+
 ## Create / Update Content
-key: API key from com_api. See the plg_api_users
+key: API key from com_api. See the plg_api_vbf
 ```http
 POST /index.php?option=com_api&app=vbf&resource=vbf&format=raw&key=<key>
 ```
@@ -41,6 +71,23 @@ GET /index.php?option=com_api&app=vbf&resource=faq&format=raw
 ```http
 GET /index.php?option=com_api&app=vbf&resource=notification&format=raw
 ```
+## Get Mother List
+```http
+GET /index.php?option=com_api&app=vbf&resource=mother&format=raw
+```
+## Get Mother By ID (code=<MotherID>)
+```http
+GET /index.php?option=com_api&app=vbf&resource=mother&code=101&format=raw
+```
+## Get Log List
+```http
+GET /index.php?option=com_api&app=vbf&resource=log&format=raw
+```
+## Get Log By Mother ID (mother_code=<MotherID>)
+```http
+GET /index.php?option=com_api&app=vbf&resource=log&mother_code=100&format=raw
+```
+
 #### Request Params
 
 | Param Name | Required | Comment |

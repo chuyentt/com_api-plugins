@@ -17,6 +17,8 @@ POST /index.php?option=com_api&app=vbf&resource=mother&format=raw&key=<key>&id=:
 | code    | NO      | STRING |        |
 | babybirth     | NO      | STRING |        |
 | lmp      | NO      | STRING |         |
+| name      | NO      | STRING |         |
+| note      | NO      | STRING |         |
 | phone      | NO      | STRING |         |
 | type      | NO      | STRING |         |
 | token      | NO      | STRING |         |

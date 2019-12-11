@@ -218,7 +218,7 @@ class ArticlesApiResourceArticle extends ApiResource
 		$app = JFactory::getApplication();
 		$article_id = $app->input->get('id', 0, 'INT');
 
-		if (empty($app->input->get('title', '', 'STRING')))
+		if (empty($app->input->post->get('title', '', 'STRING')))
 		{
 			$obj->success = false;
 			$obj->message = 'Title is Missing';
@@ -226,7 +226,7 @@ class ArticlesApiResourceArticle extends ApiResource
 			return $obj;
 		}
 
-		if (empty($app->input->get('introtext', '', 'STRING')))
+		if (empty($app->input->post->get('introtext', '', 'STRING')))
 		{
 			$obj->success = false;
 			$obj->message = 'Introtext is Missing';
@@ -234,7 +234,7 @@ class ArticlesApiResourceArticle extends ApiResource
 			return $obj;
 		}
 
-		if (empty($app->input->get('catid', '', 'INT')))
+		if (empty($app->input->post->get('catid', '', 'INT')))
 		{
 			$obj->success = false;
 			$obj->message = 'Category id is Missing';
